@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 100%; /* Torna a imagem redonda */
+  object-fit: cover; /* Garante que a imagem cubra completamente a área designada */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 70s linear;
+  }
+}
+
+
+.App-facebook {
+  height: 5vmin;
+  pointer-events: none;
+  border-radius: 100%; /* Torna a imagem redonda */
+  object-fit: cover; /* Garante que a imagem cubra completamente a área designada */
+}
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* App.css */
+
+.App-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333; /* Cor de fundo da barra de navegação */
+  padding: 10px;
+}
+
+.App-nav a {
+  text-decoration: none;
+  color: white; /* Cor do texto dos links */
+  font-weight: bold;
+}
+
+.App-nav a:hover {
+  color: lightgray; /* Cor do texto ao passar o mouse sobre os links */
+}
+
+/* Cor para a rota ativa */
+.App-nav a.active {
+  color: rgb(197, 165, 203);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
