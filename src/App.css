@@ -46,15 +46,22 @@
 
 .App-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Ajuste para space-between para espaçamento entre os links */
+  align-items: center; /* Alinha os links verticalmente no centro */
   background-color: #333; /* Cor de fundo da barra de navegação */
   padding: 10px;
+  position: fixed;
+  width: 100%; /* Garante que a barra de navegação ocupa toda a largura */
+  z-index: 1000; /* Garante que a barra de navegação está acima do conteúdo */
 }
 
 .App-nav a {
   text-decoration: none;
   color: white; /* Cor do texto dos links */
   font-weight: bold;
+  padding: 8px; /* Adiciona algum espaçamento interno aos links */
+  border-radius: 4px; /* Adiciona bordas arredondadas aos links */
+  transition: color 0.3s ease; /* Adiciona transição suave à cor do texto ao passar o mouse */
 }
 
 .App-nav a:hover {
@@ -66,6 +73,7 @@
   color: rgb(197, 165, 203);
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -73,4 +81,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
